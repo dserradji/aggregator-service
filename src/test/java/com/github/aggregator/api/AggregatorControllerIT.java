@@ -22,7 +22,7 @@ public class AggregatorControllerIT {
 	private MockMvc mvc;
 
 	@Test
-	public void shouldRetuenAPackage() throws Exception {
+	public void shouldReturnAPackage() throws Exception {
 
 		mvc.perform(asyncDispatch(mvc.perform(get("/packages")).andReturn()))
 			.andExpect(status().isOk())
